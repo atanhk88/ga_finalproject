@@ -1,0 +1,322 @@
+/* ===========================
+Fonts
+============================== */
+
+
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../font/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: Lovelo-Black;
+  src: url('../font/lovelo-black.otf');
+}
+
+
+
+/* ===========================
+General
+============================== */
+
+body {
+    font-family: OpenSans-Regular, Helvetica, Helvetica Neue, Arial;
+    font-size: 16px;
+    background-color: #F0F0E1;
+}
+
+/* ===========================
+Main Header Navigation
+============================== */
+
+.header-container {
+    height: 80px;
+    background: white;
+    -webkit-box-shadow: 0px 1px 1px rgba(221, 221, 221, 1);
+    -moz-box-shadow:    0px 1px 1px rgba(221, 221, 221, 1);
+    box-shadow:         0px 1px 1px rgba(221, 221, 221, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+nav {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 15px;
+    background-color: #76908B;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+nav:hover {
+  background-color: #76908B;
+  width: 150px;
+  height: 150px;
+}
+
+nav:active {
+  background-color: #76908B;
+  opacity: 0.8;
+  -webkit-box-shadow: inset 2px 2px 2px 1px ##003F7;
+  box-shadow: inset 2px 2px 2px 1px ##003F7;
+}
+
+.title-head { 
+    font-family: Lovelo-Black, Helvetica, Helvetica Neue, Arial;
+    color: #76908B;
+    font-size: 1.4em;
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.title-description {
+    color: #AAAAAA;
+    font-size: 0.8em;
+    margin-top: 0px;
+}
+
+.share-button {
+    display: inline-block;
+    height: 50px;
+    width: 240px;
+    float: right;
+    margin: 15px;
+    background-color: #76908B;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.share-button:hover {
+    background-color: #50635F;
+}
+
+.share-button:active {
+    background-color: #76908B;
+    opacity: 0.8;
+    -webkit-box-shadow: inset 2px 2px 2px 1px ##003F7;
+    box-shadow: inset 2px 2px 2px 1px ##003F7;
+}
+
+.search-button {
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin: 15px;
+    background-color: #BBBBBB;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-image: url(../img/search-button-sprite.png);
+    background-position: 0px 0px; 
+}
+
+.search-button:hover {
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/search-button-sprite.png);
+    background-position: 0px 50px; ; 
+}
+
+/* ===========================
+Content Area
+============================== */
+
+.content-wrapper {
+}
+
+/* ===========================
+Content - New Post
+============================== */
+
+.content-newpost {
+  background: white;
+  width: 300px;
+  height: 420px;
+  -webkit-box-shadow: 0px 1px 1px rgba(221, 221, 221, 1);
+  -moz-box-shadow:    0px 1px 1px rgba(221, 221, 221, 1);
+  box-shadow:         0px 1px 1px rgba(221, 221, 221, 1);
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+
+
+  float: left;
+  display: block;
+  position: absolute;
+  margin: 30px;
+}
+
+
+
+.content-title {
+  text-shadow: 1px 1px 2px #555;
+  font-size: 16px;
+  color: white;
+  margin: 5px;
+  z-index: 10;
+  position: absolute;
+  display: inline-block;
+}
+
+.content-remixcount {
+  text-shadow: 1px 1px 2px #555;
+  font-size: 12px;
+  color: white;
+  margin: 5px;
+  margin-top: 35px;
+  z-index: 90;
+  position: absolute;
+  display: inline-block;
+}
+
+.content-photo {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 0px;  
+}
+
+.content-photo-gradient {
+  background: linear-gradient(#333333, transparent);
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 0;
+  height: 20%;
+}
+
+
+hr.content-newpost-line {
+  width: 280px;
+  color: gray;
+  vertical-align: center;
+}
+
+.user-photo {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 300px;
+}
+.username {
+  font-size: 14px;
+  font-style: bold;
+  color: #76908B;
+  display: inline;
+  position: absolute;
+  top: 320px;
+  left: 60px;
+}
+
+time {
+  position: absolute;
+  display: inline;
+  font-size: 14px;
+  color: #99999;
+  top: 320px;
+  right: 10px;
+}
+
+/* ===========================
+Like Button for Content Post
+============================== */
+
+.like-button {
+  width: 40px;
+  height: 40px;
+}
+
+.like-button: hover  {
+  width: 40px;
+  height: 40px;
+}
+
+.like-button:hover {
+  border:;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.like-button:active {
+  border:;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+/* ===========================
+Fav Button for Content Post
+============================== */
+
+.fav-button {
+  width: 40px;
+  height: 40px;
+}
+
+.fav-button:hover {
+  border:;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+
+/* ===========================
+Add Remix Button for Content Post
+============================== */
+
+
+.addremix-button {
+  width: 120px;
+  height: 40px;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  background-color: #76908B;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+}
+
+.addremix-button:hover {
+    background-color: #50635F;
+}
+
+.addremix-button:active {
+    background-color: #76908B;
+    opacity: 0.8;
+    -webkit-box-shadow: inset 2px 2px 2px 1px ##003F7;
+    box-shadow: inset 2px 2px 2px 1px ##003F7;
+}
+
+
+
+
+/* ===========================
+Footer
+============================== */
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    margin-top: 50px;
+}
