@@ -1,381 +1,178 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
+/* ===========================
+Fonts
+============================== */
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
+
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../font/OpenSans-Regular.ttf');
 }
+
+@font-face {
+  font-family: Lovelo-Black;
+  src: url('../font/lovelo-black.otf');
+}
+
+@font-face {
+  font-family: DecoNeue-Light;
+  src: url('../font/DecoNeue-Light.ttf');
+}
+
+/* ===========================
+General
+============================== */
 
 body {
-    font-size: 1em;
-    line-height: 1.4;
+    font-family: OpenSans-Regular, Helvetica, Helvetica Neue, Arial;
+    font-size: 16px;
+    background-color: #F0F0E1;
 }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+/* ===========================
+Main Header Navigation
+============================== */
+
+.header-container {
+    height: 80px;
+    background: white;
+    opacity:0.9;
+    -webkit-box-shadow: 0px 1px 1px rgba(221, 221, 221, 1);
+    -moz-box-shadow:    0px 1px 1px rgba(221, 221, 221, 1);
+    box-shadow:         0px 1px 1px rgba(221, 221, 221, 1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+.enter-button {
+  width: 120px;
+  height: 50px;
+  position: fixed;
+  right: 50px;
+  top: 15px;
+  background-color: #76908B;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  opacity: 1;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  font-family: Lovelo-Black, Helvetica, Helvetica Neue, Arial;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-img {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+.enter-button a:visited {
+  text-decoration: none;
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
+.hero-container {
+  position: absolute;
+  background-image: url(../img/wrightbrothersplane.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+  height: 550px;
+  color: white;
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
+.site-title {
+  position: relative;
+  font-family: Lovelo-Black, Helvetica, Helvetica Neue, Arial;
+  text-align: center;
+  font-size: 4.5em;
+  z-index: 80;
+  margin-top: 150px;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-
-
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
+.site-slogan {
+  position: relative;
+  font-family: DecoNeue-Light, OpenSans-Regular, Helvetica, Helvetica Neue, Arial;
+  text-align: center;
+  font-size: 2em;
+  z-index: 80;
+  margin-top: 100px;
+  line-height: 130%;
 }
 
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
+.hero-image-darkenlayer {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  background-size: 100%;
+  height: 550px;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
+
+
+
+.sitedescription-container {
+  position: absolute;
+  top: 630px;
+  height: 500px;
+  text-align: center;
+  font-size: 2em;
+  color: #76908B;
+  width: 100%;
+  background-color: white;
+
+  line-height: 40px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.sitedescription {
+  position: relative;
+  text-align: center;
+  margin-top: 200px;
 }
 
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
+.usercaseexamples-container {
+  position: absolute;
+  top: 1130px;
+  height: 700px;
+  background-color: #76908B;
+  width: 100%;
 }
 
-.main article h1 {
-    font-size: 2em;
+.mobiledevices-container {
+  position: absolute;
+  top: 1830px;
+  height: 700px;
+  background-color: white;
+  width: 100%;
 }
 
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
+.mobiledevices-image img {
+  margin: 0 auto;
+  position: relative;
+  height: 700px;
+  width: 960px;
+  top: 0px;  
+  vertical-align: middle;
 }
 
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
+
+/* ===========================
+Footer
+============================== */
+
+.footer-container {
+  position: absolute;
+  top: 2530px;
+  height: 300px;
+  background-color: #BAC7C5;
+  width: 100%;
 }
 
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+/* ===========================
+Nav
+============================== */

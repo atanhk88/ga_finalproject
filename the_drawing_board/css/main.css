@@ -26,8 +26,14 @@ body {
     background-color: #F0F0E1;
 }
 
+
+
+
+
+
+
 /* ===========================
-Main Header Navigation
+Main Header 
 ============================== */
 
 .header-container {
@@ -44,30 +50,17 @@ Main Header Navigation
 
 
 
-nav {
-    height: 50px;
-    width: 50px;
-    float: left;
-    margin: 15px;
-    background-color: #76908B;
-    cursor: pointer;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
 
-nav:hover {
-  background-color: #76908B;
-  width: 150px;
-  height: 150px;
-}
 
-nav:active {
-  background-color: #76908B;
-  opacity: 0.8;
-  -webkit-box-shadow: inset 2px 2px 2px 1px ##003F7;
-  box-shadow: inset 2px 2px 2px 1px ##003F7;
-}
+
+
+
+
+
+
+
+
+
 
 .title-head { 
     font-family: Lovelo-Black, Helvetica, Helvetica Neue, Arial;
@@ -84,7 +77,6 @@ nav:active {
 }
 
 .share-button {
-    display: inline-block;
     height: 50px;
     width: 240px;
     float: right;
@@ -97,6 +89,7 @@ nav:active {
     font-size: 14px;
     color: white;
     text-align: center;
+    line-height: 50px;
 }
 
 .share-button:hover {
@@ -136,6 +129,8 @@ Content Area
 ============================== */
 
 .content-wrapper {
+  position: absolute;
+  top: 80px;
 }
 
 /* ===========================
@@ -156,7 +151,6 @@ Content - New Post
 
   float: left;
   display: block;
-  position: absolute;
   margin: 30px;
 }
 
