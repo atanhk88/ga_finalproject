@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color:;
 }
 
 body {
@@ -25,18 +25,6 @@ body {
     text-shadow: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-img {
-    vertical-align: middle;
-}
 
 fieldset {
     border: 0;
@@ -65,8 +53,8 @@ body {
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width:;
+    margin:;
 }
 
 /* ===================
@@ -81,30 +69,30 @@ body {
    ============== */
 
 nav ul {
-    margin: 0;
-    padding: 0;
+    margin:;
+    padding:;
 }
 
 nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+    display:;
+    margin-bottom:;
+    padding:;
 
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
+    text-align:;
+    text-decoration:;
+    font-weight:;
 
-    color: white;
-    background: #e44d26;
+    color:;
+    background:;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color:;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration:;
 }
 
 /* ==============
@@ -112,21 +100,21 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding:;
 }
 
 .main article h1 {
-    font-size: 2em;
+    font-size:;
 }
 
 .main aside {
-    color: white;
-    padding: 0px 5% 10px;
+    color:;
+    padding:;
 }
 
 .footer-container footer {
-    color: white;
-    padding: 20px 0;
+    color:;
+    padding:;
 }
 
 /* ===============
@@ -134,7 +122,7 @@ nav a:hover {
    =============== */
 
 .ie7 .title {
-    padding-top: 20px;
+    padding-top:;
 }
 
 /* ==========================================================================
@@ -166,19 +154,19 @@ nav a:hover {
    ==================== */
 
     nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
+        float:;
+        width:;
+        margin:;
+        padding:;
+        margin-bottom:;
     }
 
     nav li:first-child a {
-        margin-left: 0;
+        margin-left:;
     }
 
     nav li:last-child a {
-        margin-right: 0;
+        margin-right:;
     }
 
 /* ========================
@@ -190,7 +178,7 @@ nav a:hover {
     }
 
     .oldie nav a {
-        margin: 0 0.7%;
+        margin:;
     }
 }
 
@@ -216,8 +204,8 @@ nav a:hover {
     }
 
     nav {
-        float: right;
-        width: 38%;
+        float:;
+        width:;
     }
 
 /* ============
@@ -225,13 +213,13 @@ nav a:hover {
    ============ */
 
     .main article {
-        float: left;
-        width: 57%;
+        float:;
+        width:;
     }
 
     .main aside {
-        float: right;
-        width: 28%;
+        float:;
+        width:;
     }
 }
 
@@ -242,8 +230,8 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
+        width:; /* 1140px - 10% for margins */
+        margin:;
     }
 }
 

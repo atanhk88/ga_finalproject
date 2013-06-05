@@ -59,9 +59,6 @@ Main Header
 
 
 
-
-
-
 .title-head { 
     font-family: Lovelo-Black, Helvetica, Helvetica Neue, Arial;
     color: #76908B;
@@ -79,7 +76,6 @@ Main Header
 .share-button {
     height: 50px;
     width: 240px;
-    float: right;
     margin: 15px;
     background-color: #76908B;
     cursor: pointer;
@@ -90,6 +86,8 @@ Main Header
     color: white;
     text-align: center;
     line-height: 50px;
+    position: absolute;
+    right: 80px;
 }
 
 .share-button:hover {
@@ -106,7 +104,8 @@ Main Header
 .search-button {
     height: 50px;
     width: 50px;
-    float: right;
+    position: absolute;
+    right: 10px;
     margin: 15px;
     background-color: #BBBBBB;
     cursor: pointer;
@@ -133,6 +132,14 @@ Content Area
   top: 80px;
 }
 
+.content-wrapper-header {
+  height: 100px;
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+
+
 /* ===========================
 Content - New Post
 ============================== */
@@ -147,11 +154,11 @@ Content - New Post
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
-
-
   float: left;
   display: block;
   margin: 30px;
+  margin-top: 50px;
+  position: relative;
 }
 
 
@@ -161,9 +168,11 @@ Content - New Post
   font-size: 16px;
   color: white;
   margin: 5px;
+  margin-left: 10px;
   z-index: 10;
-  position: absolute;
-  display: inline-block;
+  position: relative;
+  font-style: bold;
+  text-shadow: 0px 2px 2px rgba(150, 150, 150, 1);
 }
 
 .content-remixcount {
@@ -171,17 +180,19 @@ Content - New Post
   font-size: 12px;
   color: white;
   margin: 5px;
-  margin-top: 35px;
-  z-index: 90;
+  margin-top: 0px;
+  margin-left: 10px;
+  z-index: 10;
   position: absolute;
-  display: inline-block;
+  text-shadow: 0px 2px 2px rgba(150, 150, 150, 1);
 }
 
 .content-photo {
   position: absolute;
   height: 300px;
   width: 300px;
-  top: 0px;  
+  z-index: 8;
+  top: 0px;
 }
 
 .content-photo-gradient {
@@ -191,20 +202,27 @@ Content - New Post
   width: 300px;
   top: 0;
   height: 20%;
+  z-index: 9;
 }
 
 
 hr.content-newpost-line {
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #eeeeee;
+  padding: 0;
   width: 280px;
-  color: gray;
-  vertical-align: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
 }
 
 .user-photo {
   height: 40px;
   width: 40px;
   margin: 10px;
-  display: inline-block;
   position: absolute;
   top: 300px;
 }
@@ -212,18 +230,17 @@ hr.content-newpost-line {
   font-size: 14px;
   font-style: bold;
   color: #76908B;
-  display: inline;
   position: absolute;
-  top: 320px;
+  top: 315px;
   left: 60px;
 }
 
 time {
   position: absolute;
-  display: inline;
+  
   font-size: 14px;
-  color: #99999;
-  top: 320px;
+  color: #999999;
+  top: 315px;
   right: 10px;
 }
 
@@ -232,27 +249,26 @@ Like Button for Content Post
 ============================== */
 
 .like-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
   width: 40px;
   height: 40px;
-}
-
-.like-button: hover  {
-  width: 40px;
-  height: 40px;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  z-index: 10;
 }
 
 .like-button:hover {
-  border:;
-  border-radius: 3px 3px 3px 3px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
+  border: 1px solid #dddddd
 }
 
 .like-button:active {
-  border:;
-  border-radius: 3px 3px 3px 3px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-box-shadow:inset 0px 2px 5px 1px #dddddd;
+  -webkit-box-shadow:inset 0px 2px 5px 1px #dddddd;
+  box-shadow:inset 0px 2px 5px 1px #dddddd;
+  
 }
 
 /* ===========================
@@ -260,17 +276,27 @@ Fav Button for Content Post
 ============================== */
 
 .fav-button {
+  position: absolute;
+  bottom: 10px;
+  left: 60px;
   width: 40px;
   height: 40px;
-}
+  z-index: 10;
 
-.fav-button:hover {
-  border:;
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
 }
 
+.fav-button:hover {
+  border: 1px solid #dddddd
+}
+
+.fav-button:active {
+  -moz-box-shadow:inset 0px 2px 5px 1px #dddddd;
+  -webkit-box-shadow:inset 0px 2px 5px 1px #dddddd;
+  box-shadow:inset 0px 2px 5px 1px #dddddd;
+}
 
 /* ===========================
 Add Remix Button for Content Post
@@ -286,9 +312,12 @@ Add Remix Button for Content Post
   background-color: #76908B;
   color: white;
   font-size: 13px;
+  line-height: 40px;
+  text-align: center;
   cursor: pointer;
   position: absolute;
-  display: inline-block;
+  bottom: 10px;
+  right: 10px;
 }
 
 .addremix-button:hover {
@@ -314,3 +343,182 @@ Footer
     bottom: 0px;
     margin-top: 50px;
 }
+
+
+
+
+
+/* ===========================
+Left Nav Pop Out
+============================== */
+
+.nav > section {
+  width: 50px;
+  height: 50px;
+  float: left;
+    margin: 15px;
+    background-color: #76908B;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.nav > section button {
+  border: none;
+  background: #76908B;
+  color: #fff;
+  padding: 1.5em;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 0.8em;
+}
+
+.nav > section button:hover {
+  background: #76908B;
+}
+
+.nav > section button.active {
+  background: #76908B;
+  -webkit-box-shadow: inset 2px 2px 2px 1px ##003F7;
+    box-shadow: inset 2px 2px 2px 1px ##003F7;
+}
+
+.nav > section button.disabled {
+  background: #aaa;
+  pointer-events: none;
+}
+
+
+/* General styles for all menus */
+.cbp-spmenu {
+  background: #76908B;
+  position: fixed;
+}
+
+.cbp-spmenu > h3 {
+  color: #FFFFFF;
+  font-size: 1em;
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  background: #4F625E;
+}
+
+.cbp-spmenu a {
+  display: block;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+  background: #4F625E;
+}
+
+.cbp-spmenu a:active {
+  background: #afdefa;
+  color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+  border-bottom: 1px solid #4F625E;
+  padding: 1em;
+}
+
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+  left: -240px;
+}
+
+.cbp-spmenu-right {
+  right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+  left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+  right: 0px;
+}
+
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.cbp-spmenu-push-toright {
+  left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+  left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+  .cbp-spmenu-horizontal {
+    font-size: 75%;
+    height: 110px;
+  }
+
+  .cbp-spmenu-top {
+    top: -110px;
+  }
+
+  .cbp-spmenu-bottom {
+    bottom: -110px;
+  }
+
+}
+
+@media screen and (max-height: 26.375em){
+
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px;
+  }
+
+  .cbp-spmenu-left,
+  .cbp-spmenu-push-toleft {
+    left: -190px;
+  }
+
+  .cbp-spmenu-right {
+    right: -190px;
+  }
+
+  .cbp-spmenu-push-toright {
+    left: 190px;
+  }
+}
+

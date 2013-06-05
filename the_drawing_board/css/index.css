@@ -64,7 +64,7 @@ Main Header Navigation
   font-family: Lovelo-Black, Helvetica, Helvetica Neue, Arial;
 }
 
-.enter-button a:visited {
+a:visited {
   text-decoration: none;
 }
 
@@ -151,11 +151,10 @@ Main Header Navigation
 
 .mobiledevices-image img {
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   height: 700px;
   width: 960px;
-  top: 0px;  
-  vertical-align: middle;
+  top: 0px;
 }
 
 

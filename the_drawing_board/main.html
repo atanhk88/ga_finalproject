@@ -23,11 +23,26 @@
 
         <div class="header-container">
             <header class="main-header">
+              
+              <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+                <h3>Alexander Tan</h3>
+                <a href="#">Discover</a>
+                <a href="#">Connections</a>
+                <a href="#">Activity</a>
+                <a href="#">Notifications</a>
+                <a href="#">Sign Out</a>
+              </nav>
+              
                 
+              <div class="nav">
+                <section class="buttonset">
+                  <button id="showLeftPush"></button>
+                </section>
+              </div>  
               
               <div class="title">
                   <h1 class="title-head">The Drawing Board</h1>
-                  <h1 class="title-description">A community where original ideas and their evolutions are shared</h1>
+                  <h1 class="title-description">Where ideas evolve.</h1>
               </div> 
 
 
@@ -45,10 +60,14 @@
         </div>
       
       <div class="content-wrapper">
+        
+        <div class"content-wrapper-header">  
+        </div>
 
-        <div class="content-newpost content-newpost1">
+
+        <div class="content-newpost content-newpost">
           <div class="content-title">Bro and Sis</div>
-          <div class="content-remixcount">0 Remixes</div>
+          <div class="content-remixcount">0 REMIXES</div>
           <div class="content-photo">
             <img src="img/cathalex.png" alt="Cath & Alex" height="300" width="300">
           </div>
@@ -64,36 +83,36 @@
           <div class="addremix-button">Add remix</div>
         </div>
 
-          <div class="content-newpost">
-            <div class="content-title">Dallas Mavericks New Kit</div>
-            <div class="content-remixcount">1 REMIX</div>
-            <div class="content-photo">
-              <img src="img/dallasmavericks.png" alt="Dallas Mavericks" height="300" width="300">
-            </div>
-            <div class="content-photo-gradient"></div>
-            <div class="user-photo">
-              <img src="img/markcuban.png" alt="Mark Cuban" height="40" width="40">
-            </div>
-            <div class="username">markcuban</div>
-            <time>3h</time>
-            <hr class="content-newpost-line">
-            <div class="like-button"></div>
-            <div class="fav-button"></div>
-            <div class="addremix-button">Add remix</div>
+        <div class="content-newpost">
+          <div class="content-title">Dallas Mavericks New Kit</div>
+          <div class="content-remixcount">1 REMIX</div>
+          <div class="content-photo">
+            <img src="img/dallasmavericks.png" alt="Dallas Mavericks" height="300" width="300">
           </div>
+          <div class="content-photo-gradient"></div>
+          <div class="user-photo">
+            <img src="img/markcuban.png" alt="Mark Cuban" height="40" width="40">
+          </div>
+          <div class="username">markcuban</div>
+          <time>3h</time>
+          <hr class="content-newpost-line">
+          <div class="like-button"></div>
+          <div class="fav-button"></div>
+          <div class="addremix-button">Add remix</div>
+        </div>
 
           <div class="content-newpost">
-            <div class="content-title"></div>
-            <div class="content-remixcount"></div>
+            <div class="content-title">Canon Citylife Collage</div>
+            <div class="content-remixcount">3 REMIXES</div>
             <div class="content-photo">
-              <img src="">
+              <img src="img/canoncollage.png" alt="Canon Collage" height="300" width="300">
             </div>
             <div class="content-photo-gradient"></div>
             <div class="user-photo">
-              <img src="">
+               <img src="img/jennydon.png" alt="Jenny Nguyen" height="40" width="40">
             </div>
-            <div class="username"></div>
-            <time></time>
+            <div class="username">jennydon</div>
+            <time>5h</time>
             <hr class="content-newpost-line">
             <div class="like-button"></div>
             <div class="fav-button"></div>
@@ -119,17 +138,17 @@
           </div>
 
           <div class="content-newpost">
-            <div class="content-title"></div>
-            <div class="content-remixcount"></div>
+            <div class="content-title">Button for running app on iOS</div>
+            <div class="content-remixcount">0 REMIXES</div>
             <div class="content-photo">
-              <img src="">
+              <img src="img/runningappbutton.png" alt="Running App Button" height="300" width="300">
             </div>
             <div class="content-photo-gradient"></div>
             <div class="user-photo">
-              <img src="">
+              <img src="img/iglooman.png" alt="Google" height="40" width="40">
             </div>
-            <div class="username"></div>
-            <time></time>
+            <div class="username">iglooman</div>
+            <time>8h</time>
             <hr class="content-newpost-line">
             <div class="like-button"></div>
             <div class="fav-button"></div>
@@ -137,17 +156,17 @@
           </div>
 
           <div class="content-newpost">
-            <div class="content-title"></div>
-            <div class="content-remixcount"></div>
+            <div class="content-title">Ridiculously Photogenic Guy</div>
+            <div class="content-remixcount">2 REMIXES</div>
             <div class="content-photo">
-              <img src="">
+              <img src="img/photogenicguy.png" alt="googleglass" height="300" width="300">
             </div>
             <div class="content-photo-gradient"></div>
             <div class="user-photo">
-              <img src="">
+              <img src="img/iglooman.png" alt="iglooman" height="40" width="40">
             </div>
-            <div class="username"></div>
-            <time></time>
+            <div class="username">iglooman</div>
+            <time>2 days</time>
             <hr class="content-newpost-line">
             <div class="like-button"></div>
             <div class="fav-button"></div>
@@ -203,10 +222,30 @@
 
 
 
+        <script src="js/classie.js"></script>
+        <script>
+          var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+            showLeftPush = document.getElementById( 'showLeftPush' ),
+            body = document.body;
+
+          
+          showLeftPush.onclick = function() {
+            classie.toggle( this, 'active' );
+            classie.toggle( body, 'cbp-spmenu-push-toright' );
+            classie.toggle( menuLeft, 'cbp-spmenu-open' );
+            disableOther( 'showLeftPush' );
+          };
 
 
+          function disableOther( button ) {
+            if( button !== 'showLeftPush' ) {
+              classie.toggle( showLeftPush, 'disabled' );
+            }
+          }
+        </script>
 
-
+      
+  
 
 
 
