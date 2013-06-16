@@ -6,15 +6,18 @@ Fonts
 
 @font-face {
   font-family: OpenSans-Regular;
-  src: url('../font/OpenSans-Regular.ttf');
+  src: url('../fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
   font-family: Lovelo-Black;
-  src: url('../font/lovelo-black.otf');
+  src: url('../fonts/lovelo-black.otf');
 }
 
-
+@font-face {
+  font-family: Idealist;
+  src: url('../fonts/Idealist.otf');
+}
 
 /* ===========================
 General
@@ -60,7 +63,7 @@ Main Header
 
 
 .title-head { 
-    font-family: Lovelo-Black, Helvetica, Helvetica Neue, Arial;
+    font-family: Idealist, Helvetica, Helvetica Neue, Arial;
     color: #76908B;
     font-size: 1.4em;
     margin: 0px;
@@ -82,7 +85,7 @@ Main Header
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 0.8em;
     color: white;
     text-align: center;
     line-height: 50px;
@@ -130,6 +133,7 @@ Content Area
 .content-wrapper {
   position: absolute;
   top: 80px;
+  padding-left: 150px;
 }
 
 .content-wrapper-header {
@@ -252,16 +256,20 @@ Like Button for Content Post
   position: absolute;
   bottom: 10px;
   left: 10px;
-  width: 40px;
+  width: 70px;
   height: 40px;
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
   z-index: 10;
+  background-image: url(../img/likeandfav-sprite.png);
+  background-position: 4px 0px; 
 }
 
 .like-button:hover {
-  border: 1px solid #dddddd
+  border: 1px solid #dddddd;
+  background-image: url(../img/likeandfav-sprite.png);
+  background-position: -136px 0px; 
 }
 
 .like-button:active {
@@ -271,6 +279,7 @@ Like Button for Content Post
   
 }
 
+
 /* ===========================
 Fav Button for Content Post
 ============================== */
@@ -278,18 +287,23 @@ Fav Button for Content Post
 .fav-button {
   position: absolute;
   bottom: 10px;
-  left: 60px;
-  width: 40px;
+  left: 90px;
+  width: 70px;
   height: 40px;
   z-index: 10;
 
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
+
+  background-image: url(../img/likeandfav-sprite.png);
+  background-position: -64px 0px; 
 }
 
 .fav-button:hover {
-  border: 1px solid #dddddd
+  border: 1px solid #dddddd;
+  background-image: url(../img/likeandfav-sprite.png);
+  background-position: -205px 0px; 
 }
 
 .fav-button:active {

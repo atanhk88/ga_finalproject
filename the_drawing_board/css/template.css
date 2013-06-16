@@ -99,6 +99,12 @@ nav a:hover {
     MOBILE: Main
    ============== */
 
+
+.title {
+        float: left;
+    }
+
+
 .main {
     padding:;
 }
@@ -124,6 +130,7 @@ nav a:hover {
 .ie7 .title {
     padding-top:;
 }
+
 
 /* ==========================================================================
    Author's custom styles
@@ -167,6 +174,10 @@ nav a:hover {
 
     nav li:last-child a {
         margin-right:;
+    }
+
+    .title {
+        float: left;
     }
 
 /* ========================
