@@ -169,15 +169,17 @@ a:visited {
   color: white;
 }
 
-.hero-image {
-
+.hero-image > div {
+  position: absolute; 
+    width: 100%;
+    margin: 0 auto;
 }
 
-.slideshow > div { 
+/* .slideshow > div { 
     position: absolute; 
     width: 100%;
     margin: 0 auto;
-  }
+  } */
 
 .slideshow > div > img { 
     width: 100%;
@@ -228,25 +230,38 @@ a:visited {
 .usercaseexamples-container {
   position: absolute;
   top: 1130px;
-  height: 700px;
+  height: 6
+  00px;
   background-color: #76908B;
   width: 100%;
 }
 
+.usercasexamples-image img {
+  margin: 0 auto;
+  display: block;
+}
+
+.collage {
+  margin: 0 auto;
+  display: block;
+}
+
 .mobiledevices-container {
   position: absolute;
-  top: 1830px;
+  top: 1730px;
   height: 900px;
   background-color: white;
   width: 100%;
+  display: block;
 }
 
 .mobiledevices-image img {
   margin: 0 auto;
-  position: absolute;
   height: 700px;
   top: 100px;
   width: 960px;
+  display: block;
+  margin-top: 150px;
 }
 
 
@@ -257,12 +272,12 @@ Footer
 .footer-container {
   position: absolute;
   top: 2730px;
-  height: 400px;
+  height: 300px;
   background-color: #76908B;
   width: 100%;
   font-size: 14px;
   letter-spacing: 1px;
-  line-height: 30px;
+  line-height: 40px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -270,13 +285,20 @@ Footer
   display: block;
 }
 
+.footer-wrapper {
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+
 .footer-main div {
   display: inline;
   float: left;
 }
 
 .footer-main li {
-  display: inline;
+  list-style: none;
 
 }
 
@@ -285,11 +307,34 @@ Footer
   color: #4F625E;
 }
 
-.footer-section {
+.footer-section ul {
+  padding: 0;
+}
+
+
+.footer-section a{
   display: inline;
 }
 
-/* ===========================
-Nav
-============================== */
+div.copyright {
+  right: 50px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.about {
+  margin-right: 120px;
+}
+
+.legal {
+  margin-right: 120px;
+}
+
+.contact {
+  margin-right: 120px;
+}
+
+.support {
+  margin-right: 120px;
+}
 
